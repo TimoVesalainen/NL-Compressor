@@ -94,6 +94,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)\Compressor\bin\Release\Compressions"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)\Compressor\bin\$(ConfigurationName)\Compressions"</PostBuildEvent>
   </PropertyGroup>
 </Project>
